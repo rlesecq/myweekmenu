@@ -1,0 +1,26 @@
+{% extends "@AppBundle/base.html.twig" %}
+
+{% block mbo_body %}
+<header class="main">
+    <h1>Créer un compte</h1>
+</header>
+<p>Marre de réfléchir à ce que vous allez manger tous les soirs?</p>
+<p>MyWeekMenu vous permet de générer votre menu pour la semaine automatiquement. Ajouter sur le site toutes vos recettes du quotidien et c'est partie! Vous pouvez en plus préciser si vous souhaitez manger léger ou non, si vous souhaitez des recettes rapides ou adapter votre menu au nombre de personnes à table.
+    Et comme ce sont vos recettes, vous êtes sûr de manger quelque chose qui vous fait plaisirs !</p>
+
+<p>De plus, nous analysons ce que vous avez mangé les semaines précédentes pour ne pas vous proposer les mêmes repas trop souvent.
+    A vous de mettre le plus de recettes possible pour varier vos menus.</p>
+    {{ form(create_account_form) }}
+{% endblock %}
+
+{% block mbo_menu %}
+    <!-- Menu -->
+    <nav id="menu">
+        <header class="major">
+            <h2>Menu</h2>
+        </header>
+        <ul>
+            <li><a href="{{ path('login') }}">Se connecter</a></li>
+        </ul>
+    </nav>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "@AppBundle/base.html.twig" %}
+
+{% block mbo_body %}
+    <header class="main">
+        <h1>Se connecter</h1>
+        {{ form(login_form) }}
+    </header>
+    {{ form(login_form) }}
+{% endblock %}
+
+{% block mbo_menu %}
+    <!-- Menu -->
+    <nav id="menu">
+        <header class="major">
+            <h2>Menu</h2>
+        </header>
+        <ul>
+            <li><a href="{{ path('homepage') }}">Accueil</a></li>
+        </ul>
+    </nav>
+{% endblock %}

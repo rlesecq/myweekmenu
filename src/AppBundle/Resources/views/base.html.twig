@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>MyWeekMenu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!--[if lte IE 8]><script src="bundles/app/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="bundles/app/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="bundles/app/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href=bundles/app/css/ie8.css" /><![endif]-->
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo"><strong><i class="fa fa-cutlery"></i> MyWeekMenu</strong></a>
+            </header>
+
+            <!-- Content -->
+            <section>
+                {% block mbo_body %}{% endblock %}
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner">
+            {% block mbo_menu %}{% endblock %}
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="bundles/app/js/jquery.min.js"></script>
+<script src="bundles/app/js/skel.min.js"></script>
+<script src="bundles/app/js/util.js"></script>
+<!--[if lte IE 8]><script src="bundles/app/js/ie/respond.min.js"></script><![endif]-->
+<script src="bundles/app/js/main.js"></script>
+
+</body>
+</html>
